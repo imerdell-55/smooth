@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://imerdell-55.github.io/smooth/</id>
     <title>Smooth</title>
-    <updated>2020-12-14T15:41:09.775Z</updated>
+    <updated>2020-12-14T15:41:37.933Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://imerdell-55.github.io/smooth/"/>
     <link rel="self" href="https://imerdell-55.github.io/smooth/atom.xml"/>
@@ -16,8 +16,7 @@
         <link href="https://imerdell-55.github.io/smooth/post/make-and-cmake/">
         </link>
         <updated>2020-12-14T15:35:35.000Z</updated>
-        <content type="html"><![CDATA[<h1 id="make-and-cmake">Make and Cmake</h1>
-<h2 id="makefile">Makefile</h2>
+        <content type="html"><![CDATA[<h2 id="makefile">Makefile</h2>
 <h3 id="概述">概述</h3>
 <p>makefile 包含了整个工程的编译规则。对于一个工程，包含大量的源文件，各模块间相互调用，需要makefile去定义一系列规则来指定文件编译的先后顺序和依赖原则。 即，makefile的作用就是使编译自动化，使我们可以通过一个简单的<code>make</code>命令来完成整个工程的编译，说到make，它是对makefile中指令进行解释的命令工具，大部分IDE都包含这个命令，这里仅指代Linux下GNU的 make，默认编译器是Unix下的GCC。</p>
 <h3 id="程序编译过程">程序编译过程</h3>
