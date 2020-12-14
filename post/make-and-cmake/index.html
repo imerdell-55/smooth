@@ -6,7 +6,7 @@
 
 <title>Make and Cmake | Smooth</title>
 
-<link rel="shortcut icon" href="https://imerdell-55.github.io/smooth//favicon.ico?v=1607960237186">
+<link rel="shortcut icon" href="https://imerdell-55.github.io/smooth//favicon.ico?v=1607960415377">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://imerdell-55.github.io/smooth//styles/main.css">
@@ -77,7 +77,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1607960237186" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1607960415377" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -364,18 +364,24 @@ project (build_type)
 add_executable(cmake_examples_build_type main.cpp)
 
 </code></pre>
-<pre><code>* Release —— 不可以打断点调试，程序开发完成后发行使用的版本，占的体积小。 它对代码做了优化，因此速度会非常快，
-在编译器中使用命令： -O3 -DNDEBUG 可选择此版本。
-
-* Debug ——调试的版本，体积大。
-在编译器中使用命令： -g 可选择此版本。
-
-* MinSizeRel—— 最小体积版本
-在编译器中使用命令：-Os -DNDEBUG可选择此版本。
-
-* RelWithDebInfo—— 既优化又能调试。
-在编译器中使用命令：-O2 -g -DNDEBUG可选择此版本。
-</code></pre>
+<ul>
+<li>
+<p>Release —— 不可以打断点调试，程序开发完成后发行使用的版本，占的体积小。 它对代码做了优化，因此速度会非常快，<br>
+在编译器中使用命令： -O3 -DNDEBUG 可选择此版本。</p>
+</li>
+<li>
+<p>Debug ——调试的版本，体积大。<br>
+在编译器中使用命令： -g 可选择此版本。</p>
+</li>
+<li>
+<p>MinSizeRel—— 最小体积版本<br>
+在编译器中使用命令：-Os -DNDEBUG可选择此版本。</p>
+</li>
+<li>
+<p>RelWithDebInfo—— 既优化又能调试。<br>
+在编译器中使用命令：-O2 -g -DNDEBUG可选择此版本。</p>
+</li>
+</ul>
 <p>编译方式</p>
 <pre><code class="language-CMake"># 设置每个目标编译标志
 target_compile_definitions(cmake_examples_compile_flags
@@ -384,7 +390,7 @@ target_compile_definitions(cmake_examples_compile_flags
 
 </code></pre>
 <pre><code class="language-CMake">
-#设置魔忍编译标志
+#设置默认编译标志
 set (CMAKE_CXX_FLAGS &quot;${CMAKE_CXX_FLAGS} -DEX2&quot; CACHE STRING &quot;Set C++ Compiler Flags&quot; FORCE)
 
 </code></pre>
@@ -419,15 +425,23 @@ target_link_libraries( third_party_include
 
 
 </code></pre>
-<pre><code> * 导入别名
-	 *Boost::boost for header only libraries
-	* Boost::system for the boost system library.
-	* Boost::filesystem for filesystem library.
-
-* 非导入别名
-	* xxx_INCLUDE_DIRS - 指向库的包含目录的变量。
-	* xxx_LIBRARY - 指向库路径的变量。
-</code></pre>
+<ul>
+<li>
+<p>导入别名</p>
+<ul>
+<li>Boost::boost for header only libraries</li>
+<li>Boost::system for the boost system library.</li>
+<li>Boost::filesystem for filesystem library.</li>
+</ul>
+</li>
+<li>
+<p>非导入别名</p>
+<ul>
+<li>xxx_INCLUDE_DIRS - 指向库的包含目录的变量。</li>
+<li>xxx_LIBRARY - 指向库路径的变量。</li>
+</ul>
+</li>
+</ul>
 
                 </div>
             </article>
